@@ -9,13 +9,23 @@
         integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <title>-ARO-RA Jewelers</title>
 </head>
 <body>
-
+<!-- Splash screen -->
     <header>
+        <!-- Social Media Icons -->
+        <!-- Font awesome does not use camel casing... -->
+        <div class="socialMedia">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-snapchat-ghost"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
         <div class="wrapper">
+            <!-- Navigation menu -->
             <nav>
+                <img src="assets/images/hamburger.svg" alt="" class="hamburger">
                 <ul class="navigation">
                     <li><a href="">home</a></li>
                     <li><a href="">about</a></li>
@@ -23,6 +33,7 @@
                     <li><a href="">contact</a></li>
                 </ul>
             </nav>
+            <!-- Logo -->
             <div class="logo">
                 <h1>-aro-<span>ra</span><span class="jewelers">jewelers</span></h1>
             </div>
@@ -30,6 +41,7 @@
     </header>
 
     <main>
+        <!-- About Section -->
         <section class="about">
             <div class="wrapper clearfix">
                 <div class="aboutIMG left">
@@ -49,11 +61,12 @@
                 </div>
             </div>
         </section>
-
+        <!-- Gallery -->
         <section class="collection">
             <div class="wrapper">
                 <h2>latest collection</h2>
                 <div class="gallery clearfix">
+                    <!-- Gallery Pictures -->
                     <div class="galleryItem">
                         <img src="assets/images/pendants.jpg" alt="Dangling pendants">
                     </div>
@@ -66,24 +79,24 @@
                 </div>
             </div>
         </section>
-
+        <!-- Catologue Events Collaboration Section -->
         <section class="icons">
             <div class="wrapper clearfix">
                 <div class="iconContainer">
-                    <a href=""><i class="far fa-images"></i></a>
+                    <a href=""><i class="far fa-images" aria-hidden="true"></i></a>
                     <h2>catologue</h2>
                 </div>
                 <div class="iconContainer">
-                    <a href=""><i class="far fa-calendar-alt"></i></a>
+                    <a href=""><i class="far fa-calendar-alt" aria-hidden="true"></i></a>
                     <h2>events</h2>
                 </div>
                 <div class="iconContainer">
-                    <a href=""><i class="far fa-handshake"></i></a>
+                    <a href=""><i class="far fa-handshake" aria-hidden="true"></i></a>
                     <h2>collaborations</h2>
                 </div>
             </div>
         </section>
-        
+        <!-- 2x2 grid -->
         <section class="otherInfo">
             <div class="otherInfoContainer">
                 <div class="otherInfoImg right">
@@ -119,9 +132,10 @@
                 </div>
             </div>
         </section>
-
+        <!-- Footer -->
         <footer>
             <div class="wrapper clearfix footerPadding">
+                <!-- Footer Navigation -->
                 <nav class="footerNavigation">
                     <ul>
                         <li>
@@ -138,16 +152,18 @@
                         </li>
                     </ul>
                 </nav>
+                <!-- Subscription -->
                 <div class="subscription">
                     <h2>stay updated</h2>
                     <p>Subscribe to our newsletter to stay updated.</p>
                     <form action="" method="get" class="">
                         <div>
-                            <input type="email" name="name" id="name" class="left">
+                            <input type="email" name="name" id="name" class="left" placeholder="email address">
                             <button>subscribe</button>
                         </div>
                     </form>
                 </div>
+                <!-- Contact Info -->
                 <div class="contact">
                     <h2>contact</h2>
                     <p>info@email | 123 - 456 - 7890</p>
@@ -155,7 +171,10 @@
                     <p>A5A 5A5, Canada</p>
                 </div>
             </div>
-            <p>Copywrite 2018 HackerYou</p>
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>Copyright 2018 HackerYou</p>
+            </div>
         </footer>
     </main>
 </body>

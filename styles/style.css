@@ -7,6 +7,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
+/* Default stylings */
 body {
     font-size: 1.25rem;
 }
@@ -30,27 +31,15 @@ img {
     object-fit: cover;
 }
 
-header {
-    background-image: url(../assets/images/splash.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    max-height: 800px;
-}
-
 ul {
     list-style: none;
-}
-
-.maxWidth {
-    max-width: 1600px;
 }
 
 .navigation {
     padding-top: 24px;
 }
 
+/*  Colours */
 .about,
 .icons,
 footer {
@@ -61,7 +50,12 @@ footer {
 p,
 h2,
 a,
-button {
+button,
+.hamburger,
+.fa-twitter,
+.fa-instagram,
+.fa-facebook-f,
+.fa-snapchat-ghost {
     color: white;
 }
 
@@ -71,6 +65,47 @@ button {
 .navigation a,
 .jewelers {
     color: #faba63;
+}
+
+.otherInfo,
+.collection,
+.copyright {
+    background-color: #201e21;
+}
+
+/* Text alignment */
+.iconContainer,
+.btn,
+.collection h2,
+.subscription,
+.copyright {
+    text-align: center;
+}
+
+/* Fonts */
+h1,
+h2,
+a,
+button {
+    font-family: 'Italiana', serif;
+}
+
+.jewelers,
+.aboutDescription,
+p,
+.navigation a {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Header section */
+header {
+    background-image: url(../assets/images/splash.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-height: 800px;
+    position: relative;
 }
 
 .navigation li {
@@ -85,12 +120,15 @@ button {
 
 .navigation a {
     text-transform: capitalize;
-    font-family: 'Lato', sans-serif;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1rem;
 }
 
 h1 {
     width: 513px;
-    font-family: 'Italiana';
     font-size: 10.125rem;
     line-height: 0.87;
     text-align: right;
@@ -102,7 +140,6 @@ h1 {
 .jewelers {
     width: 188px;
     height: 101px;
-    font-family: 'Lato';
     font-size: 2.8125rem;
     font-weight: 300;
     line-height: 1.02;
@@ -111,6 +148,21 @@ h1 {
     text-transform: lowercase;
 }
 
+.socialMedia {
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram,
+.fa-snapchat-ghost {
+    display: block;
+    margin: 15px 0;
+}
+
+/* About section */
 .about {
     padding: 100px 0;
 }
@@ -125,13 +177,11 @@ h1 {
     width: calc(100% - 50px - 315px);
     margin-left: 50px;
     float: left;
-    font-family: 'Lato';
 }
 
 h2,
 a,
 button {
-    font-family: 'Italiana';
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -142,20 +192,20 @@ h2 {
 
 .aboutDescription p,
 .otherInfoDescription p {
-    font-weight: 300;
     margin-bottom: 4%;
 }
 
+.aboutDescription p,
+.otherInfoDescription p,
 p {
-    font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
 
+/* Button styling */
 .btn {
     width: 160px;
     height: 50px;
     border: solid 2px #faba63;
-    text-align: center;
     padding: auto 0;
 }
 
@@ -165,13 +215,12 @@ p {
     font-size: 1.5rem;
 }
 
+/* Gallery Section */
 .collection {
-    background: #201e21;
     padding-bottom: 100px;
 }
 
 .collection h2 {
-    text-align: center;
     padding: 100px 0;
 }
 
@@ -184,6 +233,7 @@ p {
     margin: 0 3.5%;
 }
 
+/* Calendar Events Collaboration section */
 .icons {
     height: 300px;
 }
@@ -197,7 +247,6 @@ p {
     width: 33%;
     height: 300px;
     float: left;
-    text-align: center;
     padding-top: 60px;
 }
 
@@ -207,9 +256,9 @@ p {
     font-size: 6rem;
 }
 
+/* 2x2 grid */
 .otherInfo {
     height: 150vh;
-    background: #201e21;
     min-height: 1200px;
 }
 
@@ -239,6 +288,7 @@ p {
     float: right;
 }
 
+/* Footer section */
 .footerNavigation,
 .subscription,
 .contact {
@@ -251,7 +301,6 @@ p {
 }
 
 .subscription {
-    text-align: center;
     width: 50%;
 }
 
@@ -266,6 +315,7 @@ button {
 
 input {
     width: 75%;
+    padding: 0 33px;
 }
 
 button {
@@ -286,26 +336,11 @@ footer h2{
     padding: 5% 0;
 }
 
-@media (max-width: 1460px) {
-    .aboutIMG {
-        width: 100%;
-    }
-
-    .aboutDescription {
-        width: 100%;
-        margin: 0;
-    }
-
-    .aboutDescription h2 {
-        padding-top: 50px; 
-        text-align: center;
-    }
-
-    .aboutDescription .btn {
-        margin: 0 auto;
-    }
+.copyright {
+    padding: 10px 0;
 }
 
+/* Media queries */
 @media (max-width: 1300px) {
     .wrapper {
         width: 90%;
@@ -332,6 +367,7 @@ footer h2{
     .footerNavigation li {
         float: left;
         width: 25%;
+        padding: 0 3%;
     }
 
     .subscription h2,
@@ -389,9 +425,50 @@ footer h2{
     .navigation {
         display: none;
     }
+
+    nav {
+        float: right;
+        padding-top: 13px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .socialMedia {
+        display: none;
+    }
+
+    .aboutIMG {
+        width: 100%;
+    }
+
+    .aboutDescription {
+        width: 100%;
+        margin: 0;
+    }
+
+    .aboutDescription h2 {
+        padding-top: 50px; 
+        text-align: center;
+    }
+
+    .aboutDescription .btn {
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 800px) {
+
+    header {
+        background-image: url(../assets/images/splash.jpg);
+        background-position: calc(100% - 35%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        max-height: 2000px;
+    }
+
     .iconContainer {
         width: 300px;
         height: 300px;
@@ -405,13 +482,17 @@ footer h2{
     }
 
     h1 {
-        width: 47%;
+        /* width: 47%; */
         font-size: 3.9rem;
-        padding-top: 200px;
+        padding-top: 150px;
     }
 
     .jewelers {
         font-size: 1rem;
+    }
+
+    input {
+        text-align: center;
     }
 }
 
@@ -427,10 +508,37 @@ footer h2{
     .galleryItem:last-of-type {
         display: none;
     }
+
+    .footerNavigation li {
+        float: left;
+        width: auto;
+        padding: 0 2%;
+        font-size: 1rem;
+    }
+
+    .footerNavigation a {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+    }
+
+    .subscription p {
+        line-height: 1.75rem;
+    }
+
+    header .wrapper {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
 }
 
 @media (max-width: 410px) {
-    h1 {
-        width: 60%;
+
+    .contact,
+    .copyright {
+        font-size: 0.875rem;
     }
 }
